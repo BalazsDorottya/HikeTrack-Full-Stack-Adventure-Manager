@@ -1,0 +1,3 @@
+rootProject.name = 'hike-project'
+include 'spring-backend'
+

@@ -1,0 +1,24 @@
+/*
+ * Kiinduló gradle file
+ */
+
+plugins{
+    id 'java'
+    id 'application'
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+application{
+    mainClass='edu.hike.idde.myproject.prezentation.Main'
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply from: "${rootDir}/lint.gradle"
+}
+
